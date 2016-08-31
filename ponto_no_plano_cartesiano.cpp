@@ -1,25 +1,27 @@
 #ifndef PONTO_NO_PLANO
-
 #define PONTO_NO_PLANO
+#include <stdio.h>
 
- typedef struct ponto_no_Plano ponto;
+
+   struct Ponto
 	{
-		int abscissa;
-		int ordenada;
-		
+		double abscissa;
+		double ordenada;	
 	};
-	 ponto A;
-	 ponto B;
-	 ponto C;
 
 	void leitura_Pontos(){
+		
+		int count = 0;
 
-		ponto A,B,C;
+		struct Ponto pontos[3];
 
-		scanf("%d %d", &A.abscissa, &A.ordenada);
-		scanf("%d %d", &B.abscissa, &B.ordenada);
-		scanf("%d %d", &C.abscissa, &C.ordenada);
-		scanf
+		for (count = 0; count < 3; count ++){
+			printf("informe o valor do ponto %d",count +1);
+			scanf ("%lf",&pontos[count].abscissa);
+			scanf ("%lf",&pontos[count].ordenada);
+		}
+		
 	}
+
 #endif
 
