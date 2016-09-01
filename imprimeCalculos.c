@@ -5,15 +5,30 @@
 	void imprime_calculo()
 		{
 
-			printf("\nComprimento AB:%2.lf \n", comprimento_lado1 (ab));
+			fflush(stdin);
 
-			printf("Comprimento BC:%2.lf \n", comprimento_lado2 (bc));
+			lados_Triangulo();
 
-			printf("Comprimento AC:%2.lf \n", comprimento_lado3 (ac));
+			if(valida_triangulo()){
 
-			printf("\nPerimetro:%2.lf \n", perimetro_triangulo(p));
+				printf("Comprimento A:%2.f \n", lados[0]);
 
-			printf("\nárea do triangulo:%2.lf \n", Area(valor));
+				printf("Comprimento B:%2.f \n", lados[1]);
+
+				printf("Comprimento C:%2.f \n", lados[2]);
+
+
+
+				printf("\nárea do triangulo:%2.f \n", Area());
+
+				printf("\nPerimetro:%2.f \n",perimetro());
+			}
+			else{
+				printf("Triangulo Invalido\n");
+			}
+
+
+
 
 		}
 #endif
