@@ -4,11 +4,10 @@
 #include "math.h"
 
 	double valor;
-	double a,b;
 	double ab;
 	double bc;
 	double ac;
-	double perimetro;
+	double p;
 
 
 	double Area(double valor)
@@ -19,7 +18,8 @@
 		return valor;
 	}
 
-	double comprimento_lado1( double ab){
+	double comprimento_lado1( double ab)
+	{
 
 		double b;
 		double a; 
@@ -32,7 +32,8 @@
 		return ab;
 	}
 
-	double comprimento_lado2( double bc){
+	double comprimento_lado2( double bc)
+	{
 
 		double b;
 		double c; 
@@ -46,7 +47,8 @@
 		return bc;
 	}
 
-	double comprimento_lado3( double ac){
+	double comprimento_lado3( double ac)
+	{
 
 		double a;
 		double c; 
@@ -59,11 +61,16 @@
 		return ac;
 	}
 
-	double perimetro_triangulo( double perimetro){
-		
-		perimetro = bc + ac;
+	double perimetro_triangulo(double p)
+	{
 
-		return perimetro;
+		comprimento_lado1(ab);
+		comprimento_lado2(bc);
+		comprimento_lado3(ac);
+
+		
+
+		return ab + bc + ac;
 	}
 
 #endif
